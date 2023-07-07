@@ -1,26 +1,21 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;   
-}
-
-:root {
-    white-space: 20px;
-    
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
 }
 
 body {
-    background-color: blue;
-    color: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
+    font-size: 100%;
+    background-color: rgb(68, 120, 233);
 }
 
 .cabecalho {
-    display: flex;
+    display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -28,51 +23,30 @@ body {
 }
 
 .cabecalho-imagem {
-    height: 100px;
+    height: 150px;
 }
 
 .cabecalho-menu {
-
     display: flex;
-    gap: 50px;
-    font-weight: 800;
-    font-size: 20px;
-    width: 400px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
+    gap: 40px;
 }
 
-a {
+.cabecalho-menu-item {
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-weight: 500;
+    font-size: 23px;
 }
 
-button {
-
-    color: white;
-    background-color: white;
-    width: 180px;
-    height: 60px;
-    border: none;
-    box-shadow: 4px 5px 4px white;
-    border-radius: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300px;
-    font-size: 18px;
-    color:rgb(11, 41, 34);
-
-}
-
-.item {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    font-weight: 400;
-    font-size: 18px;
+.cabecalho-menu-item:hover {
+    background-color: rgb(68, 79, 228);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.904);
+    border-style: solid;
 }
 
 .conteudo {
+    border-top: 0.4px solid whitesmoke;
     margin-bottom: 48px;
-    border-top: 0.4px solid #FFF2E7;
 }
 
 .conteudo-principal {
@@ -86,132 +60,281 @@ button {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
 }
-
-h1 {
-     font-size: 30px;
-     width: 350px;
-     font-size: 48px;
-}
-
 
 .conteudo-principal-escrito-titulo {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    width: 400px;
+    font-size: 50px;
     color: white;
 }
 
 .conteudo-principal-escrito-subtitulo {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 24px;
-    color: white;
+    color: black;
 }
 
 .conteudo-principal-escrito-botao {
     background-color: white;
     width: 180px;
-    height: 60px;
+    height: 40px;
     border: none;
-    box-shadow: 4px 5px 4px white;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.904);
     border-radius: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400px;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
     color: black;
 }
 
 .conteudo-principal-escrito-botao:hover {
-    background-color: rgb(232, 240, 236);
+    background-color: rgb(59, 59, 240);
 }
 
 .conteudo-principal-imagem {
     height: 430px;
 }
 
-.conteudo-secundario {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 35px;
-    width: 400px;
-    color: white;
-    align-items: center; 
-    margin-bottom: 100px;
-   
-}
-
-.cabecalho-menu {
-    font-size: 18px;
-}
-
-a:hover {
-    color: white;
-    transition: 0.3 all;
-}
-
-.conteudo-secundario-paragrafo {
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: antiquewhite;
-}
-.sessao-tabela {
-    margin-top: 100px;
-}
-
-.table {
-    border:rgb(30, 17, 211);
-    padding: center;
-    /* border: 1px solid #000; */
-}
-
-.table, tr, td {
-    border-radius: 10px;
-    border: 1px solid #000;
-    border-collapse: collapse;
-    margin: auto;
-    color:#FFF2E7;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.tr, td {
-    padding: 5px 10px;
-}
-
-.tr, td {
-    background-color: #4d0fdf;
-}
-
-footer {
-
-    border: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    align-items: right;
-}
-
-p {
-    font-size: 25px;
+.tabela-principal {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.tabela-preco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+}
+
+.tabela-plano {
+    width: 400px;
+}
+
+.card-preco {
+    flex: 1;
+    max-width: 300px;
+    background-color: white;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #4b70eb;
+    transition: .3s linear;
+}
+
+.card-preco:hover .card-preco-header {
+    box-shadow: 0 0 0 26em #0fbcf9;
+}
+
+.card-preco-header {
+    background-color: #0fbcf9;
+    display: inline-block;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.preco {
+    font-size: 70px;
+    color: blue;
+    margin: 40px 0;
+    transition: .2s linear;
+}
+
+.preco sup, .preco span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-preco:hover, .card-preco:hover .preco {
+    color: #6e49d4;
+}
+
+.card-preco {
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid blue;
+    color: blue;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.btn:hover {
+    background-color: #3d1e94;
     color: white;
 }
 
-img {
-    margin: 20px;;
-    padding: 10px;
-    box-sizing: border-box;
+@media screen and(max-width: 1100px) {
+    .card-preco {
+        flex-wrap: 50%;
+    }
+}
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+.footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
     text-decoration: none;
 }
 
-svg {
-    font-size: 30px;
-    color: #1815d1;
+#footer_content {
+
+    background-color: var(--color-neutral-40);
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-areas: 'rede-social list-1 list-2 subscribe';
+    padding: 3rem 3.5rem; 
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    grid-area: rede-social;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
     align-items: center;
-    width: 180px;
-    height: 80px;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
 
 }
+
+#Instagram {
+    background-color: #f014d2;
+}
+
+#Facebook {
+    background-color: #3723a7;
+}
+
+#Whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+
+.footer-list .footer-link {
+    color: rgb(16, 7, 138);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: brown;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-10);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: blue;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: opx 1.25rem;
+    font-size: 2.0rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+
+} 
+
+#footer_copyright {
+       display: flex;
+       justify-content: center;
+       background-color: dodgerblue;
+       font-size: 1.5rem;
+       padding: 1.5rem;
+       font-weight: 100;
+}
+
+@media  and (max-width: 768px) {
+   #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+   } 
+}
+
+@media  and (max-width: 426px) {
+    #footer_content {
+     grid-template-columns: repeat(1, 1fr);
+     padding: 3rem 2rem;
+    }
+    } 

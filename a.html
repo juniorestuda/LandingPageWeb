@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+    .footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-40);
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-areas: 'rede-social list-1 list-2 subscribe';
+    padding: 3rem 3.5rem;      
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    grid-area: rede-social;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+
+}
+
+#Instagram {
+    background-color: #f014d2;
+}
+
+#Facebook {
+    background-color: #3723a7;
+}
+
+#Whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list,
+.footer-list-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer-list {
+    grid-area: list-1;
+}
+.footer-list-2 {
+    grid-area: list-2;
+}
+
+
+.footer-list .footer-link {
+    color: rgb(16, 7, 138);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: brown;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    grid-area: subscribe;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-10);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: blue;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: opx 1.25rem;
+    font-size: 2.0rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+
+} 
+
+#footer_copyright {
+       display: flex;
+       justify-content: center;
+       background-color: dodgerblue;
+       font-size: 1.5rem;
+       padding: 1.5rem;
+       font-weight: 100;
+}
+
+    </style>
+</head>
+<body>
+    
+    <footer>
+        <div id="footer_content">
+
+               <h1>Service Clients</h1>
+               <p>It's all about your dreams</p> 
+    
+               <div id="footer_social_media">
+                 <a href="#" class="footer-link" id="Instagram">
+                   <i class="fa-brands fa-instagram"></i>
+                </a>
+                   <a href="#" class="footer-link" id="Facebook">
+                   <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                   <a href="#" class="footer-link" id="Whatsapp">
+                   <i class="fa-brands fa-whatsapp"></i>
+                </a>
+               </div>
+    
+    
+               <ul class="footer-list">
+               <li>
+                <h3>Blog</h3>
+               </li>
+               <li>
+                <a href="#" class="footer-link">Tech</a>
+               </li>
+    
+               <li>
+                <a href="#" class="footer-link">Empresas</a>
+               </li>
+    
+               <li>
+                <a href="#" class="footer-link">Suporte</a>
+               </li>
+            </ul>
+    
+            <ul class="footer-list-2">
+                <li>
+                 <h3>Produts</h3>
+                </li>
+                <li>
+                 <a href="#" class="footer-link">App</a>
+                </li>
+    
+                <li>
+                 <a href="#" class="footer-link">Desktop</a>
+                </li>
+    
+                <li>
+                 <a href="#" class="footer-link">Cloud</a>
+                </li>
+            </ul>
+    
+    
+             <div id="footer_subscribe">
+             <h3>Subscribe</h3>
+    
+             <p>
+                Enter your e-mail to get notified
+                 about our news solutions
+             </p>
+    
+             <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                  <i class="fa-regular fa-envelope"></i>  
+                </button>
+    
+                 </div>
+    
+            </div>
+     </div>
+    </div>
+    
+        <div id="footer_copyright">
+            &#169
+            2023 all right reserve
+        </div>
+    
+    </footer>
+</body>
+</html>
+
+
+
+
